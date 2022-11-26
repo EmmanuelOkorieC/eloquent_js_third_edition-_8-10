@@ -1,5 +1,5 @@
 # Eloquent Javascript, 3rd Edition: A modern Introduction to programming
-An overview, with solutions and explanation of exercises in chapters eight to ten of the ebook Eloquent Javascript, 3rd Edition by Marijn Haverbeke
+An overview, with solutions and explanation of exercises in chapters eight to ten of the ebook [Eloquent Javascript, 3rd Edition](https://eloquentjavascript.net/Eloquent_JavaScript.pdf) by Marijn Haverbeke
 
 ## Overview
 ### Chapter Eight: Bugs and Error
@@ -462,7 +462,7 @@ Size of file also determines how fast a program can be transferred over the netw
 
 ## Exercises
 ### Chapter Eight: Bugs and Error
-* 8.1 Retry
+* 8.1 [Retry](https://github.com/EmmanuelOkorieC/eloquent_js_third_edition-_8-10/blob/main/chapter%208%20exercises/retry.js)
 
 For this exercise, i was tasked to write two functions. The **first** `primitiveMultiply` multiplies two numbers in 20% of cases and in the other 80% raises an exception of type `MultiplicatorUnitFailure`. The **second** fuction would wrap this first function and keep trying it until a call succeeds, after which it returns the result. I was also tasked to handle only the exceptions I am trying to handle. 
 
@@ -499,7 +499,7 @@ For this function, i wrote a continuous loop that only breaks when a call to `pr
 
 When the call succeeds the value it returns is assigned to a local binding `result` and i log it to the console and break out of the loop
 
-* 8.2 The Locked Box
+* 8.2 [The Locked Box](https://github.com/EmmanuelOkorieC/eloquent_js_third_edition-_8-10/blob/main/chapter%208%20exercises/lockedBox.js)
 
 For this exercise, i was given a sample object 
 ```javascript
@@ -587,7 +587,7 @@ If it is unlocked before `withBoxUnlocked` is called, `progress` remains 0 and i
 The `finally` block locks the box only if `progress` is 1 (box is unlocked before `body` function is called). If not it remains unlocked
 
 ### Chapter Nine: Regular Expressions
-* 9.1 RegExp Golf
+* 9.1 [RegExp Golf](https://github.com/EmmanuelOkorieC/eloquent_js_third_edition-_8-10/blob/main/chapter%209%20exercises/regExpGolf.js)
 
 For this exercise, i was tasked to write an "as small as possible" regular epression to test whether any of the given substrings occur in a string. The author adviced not to worry about word boundaries unless explicitly mentioned.
 1. car and cat
@@ -612,7 +612,7 @@ For *prop* and *pop*, i want "r" to be optional (appear zero times or one time) 
 
 The last one required word boundaries to show I want to match a word. The word would contain any character except "e" (used the square bracket and caret character for this) that appears one or more times (plus sign). I also added the option `i` so it can match uppercase or lowercase "e"
 
-* 9.2 Quoting Style
+* 9.2 [Quoting Style](https://github.com/EmmanuelOkorieC/eloquent_js_third_edition-_8-10/blob/main/chapter%209%20exercises/quotingStyle.js)
 
 For a written story, where I used single quotation marks throughout to mark pieces of dialogue, My task is to replace all the dialogue quotes with double quotes while keeping the single quotes used in contractions like "aren't". I have to think of a pattern that distinguishes these two kinds of quote usage and craft a call to the `replace` method that does the proper replacement.
 
@@ -640,7 +640,7 @@ function matcher(_, first, second) {
 ```
 Since the beginning and end of a string are not actual characters, they are assigned `undefined` in the `matcher` function.  If `first` matches an actual character, it returns that character followed by a double quote (as the replacement string) and vice versa for `second` but if they match `undefined`(no character), it simply returns the double quote.
 
-* 9.3 Numbers Again
+* 9.3 [Numbers Again](https://github.com/EmmanuelOkorieC/eloquent_js_third_edition-_8-10/blob/main/chapter%209%20exercises/numbersAgain.js)
 
 For this exercise, i was tasked to write an expression that matches only Javascript-style numbers. 
 
@@ -715,7 +715,7 @@ To answer questions one and two, I would create 5 modules that would look someth
 
 For question three i would say the three helper functions `randomPick`, `findRoute` and `buildGraph`. For question four, it totally depends on how complex the code I have to write is. I would most likely write `randomPick` and `buildGraph` myself and use NPM packages for `findRoute`
 
-* 10.2 Roads Module
+* 10.2 [Roads Module](https://github.com/EmmanuelOkorieC/eloquent_js_third_edition-_8-10/tree/main/chapter%2010%20exercises/roadModules)
 
 For this exercise, i was tasked to write a CommonJS Module based on the example from Chapter 7, that contains the array of roads and exports the graph data structure representing them as `roadGraph`. It should depend on a module `./graph`, which exports a function `buildGraph` that is used to build the graph. This function expects an array of two-element arrays (the start and end points of the roads).
 
