@@ -87,8 +87,7 @@ To make an exception specific and be able to catch it then,
            throw e 
          }
    }
-    ```
-
+  ```
 
 #### Assertions
 Assertions are checks inside a program that verify that something is the way it is supposed to be. They are used **not** to handle situations that can come up in normal operation, but to find programmer mistakes. You can write them as uncaught exceptions that blow up your program when a mistake is made.
